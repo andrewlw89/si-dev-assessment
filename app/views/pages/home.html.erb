@@ -19,7 +19,8 @@
       </div>
       <div class="row">
         <div class="col-xs-3"></div>
-        <form>
+        <%= form_tag("/sms/send", method: "post") do %>
+          <!-- add form elements here -->
           <div class="form-group col-xs-6">
             <div class="row">
               <label for="exampleInputphone1">phone number</label>
@@ -39,7 +40,7 @@
             </div>
             
           </div>
-        </form>
+        <% end %>
         <div class="col-xs-3"></div>
       </div>
     </body>

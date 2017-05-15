@@ -15,6 +15,10 @@ class UsersController < ApplicationController
       redirect_to action: "new"
     end
   end
+  
+  def sms
+  
+  end
 
 private
 
